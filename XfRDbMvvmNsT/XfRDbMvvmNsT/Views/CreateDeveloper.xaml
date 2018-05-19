@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:XfRDbMvvmNsT.ViewModels"
+             x:Class="XfRDbMvvmNsT.Views.CreateDeveloper"
+             Title="Create Developer">
+    <ContentPage.BindingContext>
+        <viewModels:DeveloperViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Label Text="Firstname"/>
+        <Entry />
+        <Label Text="Lastname"/>
+        <Entry />
+        <Button Text="Create"/>
+    </StackLayout>
+</ContentPage>

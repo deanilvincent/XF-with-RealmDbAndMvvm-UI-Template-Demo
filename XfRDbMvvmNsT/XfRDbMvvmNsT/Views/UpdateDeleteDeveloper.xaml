@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:XfRDbMvvmNsT.ViewModels;assembly=XfRDbMvvmNsT"
+             x:Class="XfRDbMvvmNsT.Views.UpdateDeleteDeveloper"
+             Title="Update/Delete Developer">
+    <ContentPage.BindingContext>
+        <viewModels:DeveloperViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Label Text="Dev Id"/>
+        <Entry Keyboard="Numeric"/>
+        <Label Text="Firstname"/>
+        <Entry />
+        <Label Text="Lastname"/>
+        <Entry />
+        <Button Text="Update"/>
+        <Button Text="Delete"/>
+    </StackLayout>
+</ContentPage>
